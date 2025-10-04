@@ -20,6 +20,9 @@ public class Character {
     }
 
     public void setHp(int hp) {
+        if (hp < 0){
+            hp = 0;
+        }
         this.hp = hp;
     }
 
@@ -41,6 +44,10 @@ public class Character {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String toString(){
+        return this.name + "{hp=" + this.hp + ", power=" + this.power + "}";
     }
 
 }
