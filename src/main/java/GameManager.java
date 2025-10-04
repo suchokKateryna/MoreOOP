@@ -8,9 +8,9 @@ public class GameManager {
         if(c1.getHp() <= 0 && c2.getHp() <= 0){
             System.out.println("It's a draw!");
         } else if(c1.getHp() <= 0){
-            System.out.println("Character " + c2.name + " wins!");
+            System.out.println("Character " + c2.getName() + " wins!");
         } else {
-            System.out.println("Character " + c1.name + " wins!");
+            System.out.println("Character " + c1.getName() + " wins!");
         }
     }
 

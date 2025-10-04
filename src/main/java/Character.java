@@ -2,9 +2,9 @@ import lombok.Data;
 
 @Data
 public class Character {
-    int power;
-    int hp;
-    String name;
+    private int power;
+    private int hp;
+    private String name;
 
     public Character(int power, int hp){
         this.power = power;
@@ -16,6 +16,31 @@ public class Character {
     }
 
     public boolean isAlive(){
-        return this.hp >0;
+        return this.hp > 0;
     }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getHp() {
+        return this.hp;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    public int getPower() {
+        return this.power;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

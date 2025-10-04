@@ -1,7 +1,7 @@
 public class Hobbit extends Character{
     public Hobbit(){
         super(0, 3);
-        this.name = "Hobbit";
+        this.setName("Hobbit");
     }
 
     @Override
