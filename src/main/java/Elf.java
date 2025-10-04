@@ -1,17 +1,7 @@
-public class Elf extends Character{
+public class Elf extends Characterr{
 
     public Elf(){
-        super(10, 10);
+        super(10, 10, new ElfKick());
         this.setName("Elf");
-    }
-
-    @Override
-    public void kick(Character c){
-        if (c.getPower() < this.getPower()){
-            c.setHp(0);
-        }else{
-            int prev_power = c.getPower();
-            c.setPower(prev_power + 1);
-        }
-    }   
+    }  
 }

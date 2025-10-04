@@ -6,7 +6,7 @@ public class CharacterFactory {
 
     int choice = RANDOM.nextInt(4);
 
-    public Character createCharacter(){
+    public Characterr createCharacter(){
         switch(choice){
             case 0:
                 return new Hobbit();

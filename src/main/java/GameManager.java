@@ -1,6 +1,6 @@
 public class GameManager {
 
-    public static void fight(Character c1, Character c2){
+    public static void fight(Characterr c1, Characterr c2){
         while(c1.getHp() > 0 && c2.getHp() > 0){
             c1.kick(c2);
             c2.kick(c1);

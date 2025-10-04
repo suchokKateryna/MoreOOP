@@ -1,18 +1,20 @@
 import lombok.Data;
 
 @Data
-public class Character {
+public class Characterr {
     private int power;
     private int hp;
     private String name;
+    private KickStrategy strategy;
 
-    public Character(int power, int hp){
+    public Characterr(int power, int hp, KickStrategy strategy) {
         this.power = power;
         this.hp = hp;
+        this.strategy = strategy;
     }
 
-    public void kick(Character c){
-        
+    public void kick(Characterr enemy){
+        this.strategy.kick(this, enemy);
     }
 
     public boolean isAlive(){

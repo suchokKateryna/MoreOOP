@@ -1,12 +1,7 @@
-public class Hobbit extends Character{
+public class Hobbit extends Characterr{
     public Hobbit(){
-        super(0, 3);
+        super(0, 3, new HobbitKick());
         this.setName("Hobbit");
-    }
-
-    @Override
-    public void kick(Character c){
-        System.out.println("Hobbit is crying!");
     }
 
 
